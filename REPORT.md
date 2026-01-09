@@ -93,6 +93,12 @@ Experiment: pytorch-classification
 
 "The MLflow User Interface displaying the 'pytorch-classification' experiment, tracking multiple runs, hyperparameters, and accuracy metrics."
 
+
+![](screenshots/test_resnetRun.png)
+
+"Detailed view of a specific test run in MLflow, displaying key performance metrics such as test accuracy (30%), loss, and F1-score."
+
+
 Experiment Tracking: The interface below shows the tracked runs, including metrics (accuracy, loss) and parameters (folds, backbone freezing).
 
 ## 5) Training
@@ -117,8 +123,15 @@ models/cnn_resnet18_freeze_backbone_True_fold_0..4.pth
 
 ## 7) Results & Analysis
 
+
 Best run (by best_val_accuracy):
 run_id: 408acb4f6a014991b3624747f9e48233
+
+
+![](screenshots/bestRun.png)
+
+"Leaderboard of experiment runs sorted by best_val_accuracy, highlighting the top-performing model (Fold 3) which achieved 75% accuracy."
+
 fold: 3
 best_val_accuracy: 75.0
 artifact_uri: mlflow-artifacts:/1/408acb4f6a014991b3624747f9e48233/artifacts
@@ -131,6 +144,11 @@ Fold 0: 50.0
 Fold 2: 25.0
 
 Recommended model: models/cnn_resnet18_freeze_backbone_True_fold_3.pth
+
+
+![](screenshots/parallelCoordinates.png)
+
+"Parallel Coordinates Plot visualizing the relationship between hyperparameters (like backbone and batch size) and model metrics across 9 different runs."
 
 Observations:
 Freezing the backbone improves stability with a small dataset.
