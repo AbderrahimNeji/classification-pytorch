@@ -2,3 +2,8 @@
 .dvc/tmp
 .dvc/cache
 .venv/
+
+# GCP Service Account Keys
+datamanagement-*.json
+project4-*.json
+*.json.key
